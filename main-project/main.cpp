@@ -20,19 +20,21 @@ int main()
         read("data.txt", session_results, size);
         for (int i = 0; i < size; i++)
         {
-            cout << session_results[i]->student.last_name << ' ';
-            cout << session_results[i]->student.first_name << ' ';
-            cout << session_results[i]->student.middle_name << ' ';
-            cout << session_results[i]->date.day << '.';
-            cout << session_results[i]->date.month << '.';
-            cout << session_results[i]->date.year << ' ';
-            cout << session_results[i]->grade << ' ';
-            cout << session_results[i]->subject << '\n';
+            cout << "------------------------------------------------------------------------------" << endl;
+            cout << " | " << left << setw(10) << session_results[i]->student.last_name << " "
+                << left << setw(8) << session_results[i]->student.first_name << " "
+                << left << setw(12) << session_results[i]->student.middle_name << " | "
+                << setfill('0') << setw(2) << session_results[i]->date.day << "."
+                << setfill('0') << setw(2) << session_results[i]->date.month << "."
+                << setfill(' ') << session_results[i]->date.year << " | "
+                << setw(2) << session_results[i]->grade << " | "
+                << setw(20) << right << session_results[i]->subject << " | \n";
         }
         for (int i = 0; i < size; i++)
         {
             delete session_results[i];
         }
+        cout << "------------------------------------------------------------------------------" << endl;
     }
     catch (const char* error)
     {
