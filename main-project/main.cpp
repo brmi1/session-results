@@ -13,6 +13,7 @@ int main()
     cout << "Session results #8. GIT\n";
     cout << "Variant #8. Session results\n";
     cout << "Author: Roman Bachun\n\n";
+    cout << "Groupt: 24Pinj\n";
     session_results* session_results[MAX_FILE_ROWS_COUNT];
     int size;
     try
