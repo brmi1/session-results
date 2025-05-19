@@ -140,13 +140,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="file_reader.cpp" />
+    <ClCompile Include="filter.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="process.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="data.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="file_reader.h" />
+    <ClInclude Include="filter.h" />
+    <ClInclude Include="processing.h" />
     <ClInclude Include="session_results.h" />
     <ClInclude Include="constants.h" />
   </ItemGroup>
