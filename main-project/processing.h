@@ -3,6 +3,6 @@
 
 #include "session_results.h"
 
-double calculate_session_duration(session_results* array[], int size, string subject);
+int calculate_session_duration(session_results* array[], int size, string subject);
 
 #endif

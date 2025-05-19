@@ -7,7 +7,7 @@ int date_to_days(const date& d) {
 	return d.year * 365 + d.month * 30 + d.day;
 }
 
-double calculate_session_duration(session_results* array[], int size, string subject)
+int calculate_session_duration(session_results* array[], int size, string subject)
 {
 	int count_subject = 0;
 	int session_duration = 0;
